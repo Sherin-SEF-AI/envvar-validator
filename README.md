@@ -1,19 +1,27 @@
-# 🚀 env-validator
+# 🚀 envvar-validator
 
 **The most comprehensive, production-ready environment variable validation library for Python**
 
-[![PyPI version](https://badge.fury.io/py/env-validator.svg)](https://badge.fury.io/py/env-validator)
+[![PyPI version](https://badge.fury.io/py/envvar-validator.svg)](https://badge.fury.io/py/envvar-validator)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Tests](https://github.com/Sherin-SEF-AI/env-validator/workflows/Tests/badge.svg)](https://github.com/Sherin-SEF-AI/env-validator/actions)
-[![Documentation](https://readthedocs.org/projects/env-validator/badge/?version=latest)](https://env-validator.readthedocs.io/)
+[![Tests](https://github.com/Sherin-SEF-AI/envvar-validator/workflows/Tests/badge.svg)](https://github.com/Sherin-SEF-AI/envvar-validator/actions)
+[![Documentation](https://readthedocs.org/projects/envvar-validator/badge/?version=latest)](https://envvar-validator.readthedocs.io/)
 
 > **The definitive solution for Python environment variable validation that developers choose because it's genuinely the best tool available.**
 
-## 🌟 Why env-validator?
+## 📦 Installation
 
-**env-validator** is the most comprehensive, feature-rich environment variable validation library for Python. Built with production-ready features, security-first design, and exceptional developer experience, it's the tool that will revolutionize how you manage environment variables.
+```bash
+pip install envvar-validator
+```
+
+[View on PyPI](https://pypi.org/project/envvar-validator/)
+
+## 🌟 Why envvar-validator?
+
+**envvar-validator** is the most comprehensive, feature-rich environment variable validation library for Python. Built with production-ready features, security-first design, and exceptional developer experience, it's the tool that will revolutionize how you manage environment variables.
 
 ### ✨ Key Features
 
@@ -29,12 +37,6 @@
 ## 🚀 Quick Start
 
 ### Installation
-
-```bash
-pip install env-validator
-```
-
-### Basic Usage
 
 ```python
 from env_validator import EnvironmentValidator, ValidationError
@@ -123,31 +125,31 @@ settings = Settings()
 ### Environment Validation
 ```bash
 # Validate current environment
-env-validator validate
+envvar-validator validate
 
 # Validate with custom schema file
-env-validator validate --schema schema.yaml
+envvar-validator validate --schema schema.yaml
 
 # Generate environment report
-env-validator report --output html
+envvar-validator report --output html
 ```
 
 ### Interactive Setup
 ```bash
 # Interactive environment setup wizard
-env-validator setup
+envvar-validator setup
 
 # Generate configuration templates
-env-validator template --framework django
+envvar-validator template --framework django
 ```
 
 ### Security Scanning
 ```bash
 # Scan for secrets and sensitive data
-env-validator scan --secrets
+envvar-validator scan --secrets
 
 # Compliance check
-env-validator scan --compliance gdpr
+envvar-validator scan --compliance gdpr
 ```
 
 ## 🔧 Advanced Features
@@ -323,11 +325,11 @@ env = FastAPIEnvironmentValidator(app, {
 
 ## 📚 Documentation
 
-- [📖 Full Documentation](https://env-validator.readthedocs.io/)
-- [🚀 Quick Start Guide](https://env-validator.readthedocs.io/en/latest/quickstart.html)
-- [🔧 API Reference](https://env-validator.readthedocs.io/en/latest/api.html)
-- [🏗️ Framework Integrations](https://env-validator.readthedocs.io/en/latest/frameworks.html)
-- [🔒 Security Guide](https://env-validator.readthedocs.io/en/latest/security.html)
+- [📖 Full Documentation](https://envvar-validator.readthedocs.io/)
+- [🚀 Quick Start Guide](https://envvar-validator.readthedocs.io/en/latest/quickstart.html)
+- [🔧 API Reference](https://envvar-validator.readthedocs.io/en/latest/api.html)
+- [🏗️ Framework Integrations](https://envvar-validator.readthedocs.io/en/latest/frameworks.html)
+- [🔒 Security Guide](https://envvar-validator.readthedocs.io/en/latest/security.html)
 
 ## 🤝 Contributing
 
@@ -335,8 +337,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ### Development Setup
 ```bash
-git clone https://github.com/Sherin-SEF-AI/env-validator.git
-cd env-validator
+git clone https://github.com/Sherin-SEF-AI/envvar-validator.git
+cd envvar-validator
 pip install -e ".[dev]"
 pre-commit install
 pytest
@@ -369,4 +371,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ by [Sherin Joseph Roy](https://github.com/Sherin-SEF-AI)**
 
-[GitHub](https://github.com/Sherin-SEF-AI/env-validator) | [Documentation](https://env-validator.readthedocs.io/) | [Issues](https://github.com/Sherin-SEF-AI/env-validator/issues) | [Discussions](https://github.com/Sherin-SEF-AI/env-validator/discussions) 
+[GitHub](https://github.com/Sherin-SEF-AI/envvar-validator) | [Documentation](https://envvar-validator.readthedocs.io/) | [Issues](https://github.com/Sherin-SEF-AI/envvar-validator/issues) | [Discussions](https://github.com/Sherin-SEF-AI/envvar-validator/discussions) 

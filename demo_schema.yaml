@@ -1,0 +1,137 @@
+# Demo Environment Schema for envvar-validator CLI testing
+DATABASE_URL:
+  type: str
+  required: true
+  validators: [database_url]
+  description: PostgreSQL database connection string
+
+API_KEY:
+  type: str
+  required: true
+  validators: [api_key]
+  sensitive: true
+  description: API key for external services
+
+SECRET_KEY:
+  type: str
+  required: true
+  validators: [secret_key]
+  sensitive: true
+  description: Application secret key
+
+DEBUG:
+  type: bool
+  default: false
+  description: Debug mode flag
+
+PORT:
+  type: int
+  default: 8000
+  validators: [port_range]
+  description: Application port
+
+ENVIRONMENT:
+  type: str
+  default: development
+  description: Application environment
+
+ALLOWED_HOSTS:
+  type: list
+  default: [localhost]
+  description: Allowed host names
+
+CORS_ORIGINS:
+  type: list
+  default: [http://localhost:3000]
+  description: CORS allowed origins
+
+REDIS_URL:
+  type: str
+  required: true
+  validators: [database_url]
+  description: Redis connection URL
+
+EMAIL_USERNAME:
+  type: str
+  required: true
+  validators: [email]
+  description: Email username
+
+EMAIL_PASSWORD:
+  type: str
+  required: true
+  sensitive: true
+  description: Email password
+
+JWT_SECRET:
+  type: str
+  required: true
+  validators: [secret_key]
+  sensitive: true
+  description: JWT secret key
+
+AWS_ACCESS_KEY_ID:
+  type: str
+  required: true
+  validators: [aws_access_key]
+  sensitive: true
+  description: AWS access key ID
+
+AWS_SECRET_ACCESS_KEY:
+  type: str
+  required: true
+  validators: [aws_secret_key]
+  sensitive: true
+  description: AWS secret access key
+
+AWS_REGION:
+  type: str
+  default: us-east-1
+  description: AWS region
+
+STRIPE_SECRET_KEY:
+  type: str
+  required: true
+  validators: [stripe_secret_key]
+  sensitive: true
+  description: Stripe secret key
+
+SENTRY_DSN:
+  type: str
+  required: true
+  validators: [url]
+  description: Sentry DSN for error tracking
+
+LOG_LEVEL:
+  type: str
+  default: INFO
+  validators: [log_level]
+  description: Logging level
+
+MAX_CONNECTIONS:
+  type: int
+  default: 100
+  validators: [positive_integer]
+  description: Maximum database connections
+
+SESSION_TIMEOUT:
+  type: int
+  default: 3600
+  validators: [positive_integer]
+  description: Session timeout in seconds
+
+RATE_LIMIT:
+  type: int
+  default: 1000
+  validators: [positive_integer]
+  description: Rate limit per minute
+
+BACKUP_ENABLED:
+  type: bool
+  default: true
+  description: Enable automated backups
+
+MONITORING_ENABLED:
+  type: bool
+  default: true
+  description: Enable monitoring and metrics 

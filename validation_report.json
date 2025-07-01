@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-07-01T22:40:01.773569",
+  "validation_summary": {
+    "is_valid": true,
+    "security_score": 100.0,
+    "total_variables": 111,
+    "schema_variables": 21,
+    "validated_variables": 21,
+    "errors_count": 0,
+    "warnings_count": 90
+  },
+  "performance_metrics": {
+    "validation_time": 0.00029587745666503906,
+    "variables_validated": 21,
+    "errors_count": 0,
+    "warnings_count": 90
+  },
+  "security_scan": {
+    "score": 100.0,
+    "issues": []
+  },
+  "compliance_check": {
+    "status": {},
+    "issues": []
+  },
+  "environment_info": {
+    "environment_type": "development",
+    "strict_mode": false
+  },
+  "validated_values": {
+    "DATABASE_URL": "postgresql://user:password@localhost:5432/demo_db",
+    "API_KEY": "***REDACTED***",
+    "SECRET_KEY": "***REDACTED***",
+    "DEBUG": true,
+    "PORT": 8000,
+    "ENVIRONMENT": "development",
+    "EMAIL_USERNAME": "demo@example.com",
+    "EMAIL_PASSWORD": "***REDACTED***",
+    "AWS_ACCESS_KEY_ID": "***REDACTED***",
+    "AWS_SECRET_ACCESS_KEY": "***REDACTED***",
+    "AWS_REGION": "us-east-1",
+    "STRIPE_SECRET_KEY": "***REDACTED***",
+    "STRIPE_PUBLISHABLE_KEY": "pk_test_demo_1234567890abcdef",
+    "SENTRY_DSN": "https://demo@sentry.io/123456",
+    "LOG_LEVEL": "INFO",
+    "MAX_CONNECTIONS": 100,
+    "SESSION_TIMEOUT": 3600,
+    "RATE_LIMIT": 1000,
+    "BACKUP_ENABLED": true,
+    "MONITORING_ENABLED": true,
+    "ALERT_EMAIL": "alerts@example.com"
+  }
+}

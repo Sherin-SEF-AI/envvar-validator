@@ -1,5 +1,0 @@
-[console_scripts]
-env-validator = env_validator.cli.main:main
-
-[gui_scripts]
-env-validator-gui = env_validator.gui:main

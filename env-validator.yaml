@@ -1,0 +1,21 @@
+environment_type: development
+strict_mode: false
+allow_unknown: false
+schema:
+  SECRET_KEY:
+    type: str
+    required: true
+    validators:
+    - secret_key
+    sensitive: true
+    description: Flask secret key
+  DATABASE_URL:
+    type: str
+    required: true
+    validators:
+    - database_url
+    description: Database connection URL
+  FLASK_ENV:
+    type: str
+    default: development
+    description: Flask environment
